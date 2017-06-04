@@ -2,4 +2,6 @@
     <string name="app_name">audioPlayer</string>
     <string name="play_str">PLAY</string>
     <string name="pause_str">PAUSE</string>
+    <string name="back">back</string>
+    <string name="forward">forward</string>
 </resources>

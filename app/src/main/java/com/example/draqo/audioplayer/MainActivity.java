@@ -59,6 +59,8 @@ public class MainActivity extends Activity {
             mediaPlayer.pause();
         }
     }
+
+
     public void startPlayProgressUpdater() {
         seekBar.setProgress(mediaPlayer.getCurrentPosition());
 
@@ -74,5 +76,13 @@ public class MainActivity extends Activity {
             buttonPlayStop.setText(getString(R.string.play_str));
             seekBar.setProgress(0);
         }
+    }
+
+    public void playBack(View view) {
+        mediaPlayer.seekTo(mediaPlayer.getCurrentPosition()- 3000);
+    }
+
+    public void playForward(View view) {
+        mediaPlayer.seekTo(mediaPlayer.getCurrentPosition() + 3000);
     }
 }
